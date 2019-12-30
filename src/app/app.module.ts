@@ -14,6 +14,29 @@ import { ServicesComponent } from './services/services.component';
 import { ProductsComponent } from './products/products.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import{ RouterModule, Routes } from '@angular/router';
+
+
+const appRoutes: Routes = [
+  { path: 'about', component: AboutComponent },
+  { path: 'contactus', component: ContactusComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'products', component: ProductsComponent },
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: { title: 'home' }
+  },
+  { path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+ 
+];
+
+
 
 @NgModule({
   declarations: [
@@ -26,6 +49,10 @@ import { ContactusComponent } from './contactus/contactus.component';
     ContactusComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
