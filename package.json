@@ -31,13 +31,13 @@
     "@agm/core": "^1.0.0-beta.5"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.802.2",
+    "@angular-devkit/build-angular": "^0.803.21",
     "@angular/cli": "~8.2.2",
     "@angular/compiler-cli": "~8.2.0",
     "@angular/language-service": "~8.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -52,5 +52,16 @@
     "typescript": "~3.5.3"
   },
   "//": "git+https://oauth2:REPLACE_WITH_YOUR_TOKEN@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git",
-  "license": "Custom license"
+  "license": "UNLICENSED",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baburamesh920/Angular-New.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/baburamesh920/Angular-New/issues"
+  },
+  "homepage": "https://github.com/baburamesh920/Angular-New#readme"
 }
